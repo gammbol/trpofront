@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'htpps://trposite-production.up.railway.app/api';
+const API_URL = 'https://trposite-production.up.railway.app/api';
 
 export const solveEquation = async (equation, variable = 'x') => {
   const response = await axios.post(`${API_URL}/solve`, {
