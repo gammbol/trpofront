@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://nurturing-strength.up.railway.app/api';
+const API_URL = 'https://nurturing-strength.up.railway.app/api';
 
 export const solveEquation = async (equation, variable = 'x') => {
-  const response = await axios.post(`${API_BASE_URL}/solve`, {
+  const response = await axios.post(`${API_URL}/solve`, {
     equation,
     variable
   });
